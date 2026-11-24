@@ -1,0 +1,4 @@
+%%html
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Validated Registration Form</title></head><body><h1>Validated Registration Form</h1><p>Complete every required field. Submitting sends a POST request to submit.php.</p><form action="submit.php" method="post"><p><label for="name">Name:</label> <input id="name" name="name" type="text" required minlength="2" maxlength="50"></p>
+<p><label for="email">Email:</label> <input id="email" name="email" type="email" required></p><p><label for="mobile">Mobile (10 digits):</label> <input id="mobile" name="mobile" type="tel" required pattern="[0-9]{10}" title="Enter exactly 10 digits"></p>
+<p><label for="password">Password (at least 8 characters):</label> <input id="password" name="password" type="password" required minlength="8"></p><p><label for="age">Age (18–30):</label> <input id="age" name="age" type="number" min="18" max="30" required></p><button type="submit">Submit</button></form></body></html>
